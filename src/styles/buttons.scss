@@ -1,0 +1,10 @@
+//important, потому что стороння библиотека компонентов
+
+.btn {
+  border-radius: $general-border-radius !important;
+  padding: 10px 20px !important;
+
+  &-primary {
+    background: linear-gradient(104.96deg, #8860d0 -11.32%, #5ab9ea 106.34%);
+  }
+}

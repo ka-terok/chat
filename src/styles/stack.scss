@@ -1,0 +1,22 @@
+.stack {
+  width: 250px;
+
+  &__title {
+    margin-bottom: 2rem;
+    font-size: 24px;
+  }
+
+  &__item {
+    background-color: $blue-light;
+    border-radius: $general-border-radius;
+    color: white;
+    padding: 10px 20px;
+    width: 100px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  &__item:hover {
+    background-color: $blue-light-hover;
+  }
+}

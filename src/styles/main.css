@@ -1,0 +1,223 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: white;
+  color: #777c83;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.container {
+  max-width: 1200px;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: white;
+}
+.container__home {
+  margin-top: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container__chat {
+  display: flex;
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  justify-content: end;
+  background-image: linear-gradient(-45deg, rgb(128, 206, 232) 0%, rgb(90, 185, 234) 25%, rgb(136, 96, 208) 51%, rgb(86, 128, 233) 100%);
+}
+
+textarea {
+  background-color: white;
+  border: none;
+  font-size: 14px;
+  line-height: 20px;
+  appearance: none;
+  resize: none;
+  padding: 4px;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+textarea::-webkit-scrollbar {
+  width: 12px;
+}
+
+textarea::-webkit-scrollbar-track {
+  background: #f7f7fc;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: #d9dbe9;
+  border-radius: 20px;
+  border: 3px solid #f7f7fc;
+}
+
+.stack {
+  width: 250px;
+}
+.stack__title {
+  margin-bottom: 2rem;
+  font-size: 24px;
+}
+.stack__item {
+  background-color: #80cee8;
+  border-radius: 24px;
+  color: white;
+  padding: 10px 20px;
+  width: 100px;
+  text-align: center;
+  cursor: pointer;
+}
+.stack__item:hover {
+  background-color: #93d6e8;
+}
+
+.modal-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.modal-container__body {
+  width: 400px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 60px 40px;
+  border-radius: 24px;
+  margin-left: 30%;
+  margin-top: 20%;
+}
+.modal-container__body .input {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.modal-container__body .btn {
+  margin-top: 2rem;
+}
+.modal-container__title {
+  margin-bottom: 2rem;
+  text-align: center;
+  line-height: 24px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+:focus-visible {
+  outline: none;
+}
+
+.btn {
+  border-radius: 24px !important;
+  padding: 10px 20px !important;
+}
+.btn-primary {
+  background: linear-gradient(104.96deg, #8860D0 -11.32%, #5AB9EA 106.34%);
+}
+
+.list {
+  width: 100%;
+  position: relative;
+  overflow: auto;
+  max-height: calc(100% - 115px);
+  display: flex;
+  flex-direction: column;
+}
+.list__item, .list__item-users {
+  background-color: white;
+  width: auto;
+  max-width: 20rem;
+  border-radius: 24px;
+  border-bottom-left-radius: 0;
+  margin-bottom: 1rem;
+  padding: 8px;
+  margin-left: 20px;
+  opacity: 1;
+  transition: opacity 1s;
+}
+.list__item-parent {
+  font-style: italic;
+  border-left: 3px solid #5680E9;
+  padding: 10px;
+  margin-left: 10px;
+  margin-bottom: 4px;
+  cursor: pointer;
+}
+.list__item-parent__alias {
+  font-weight: 500;
+}
+.list__item-name, .list__item-users .list__item-name {
+  margin-bottom: 4px;
+  font-weight: 600;
+  color: #8860D0;
+}
+.list__item-with-parent {
+  border-top-left-radius: 8px;
+}
+.list__item-users {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 24px;
+  margin-left: 30%;
+}
+.list__item-users .list__item-name {
+  color: #5AB9EA;
+}
+
+.list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.list::-webkit-scrollbar-thumb {
+  background-color: #d9dbe9;
+  border-radius: 20px;
+}
+
+.message-form {
+  height: auto;
+  width: calc(100% - 40px);
+  overflow: hidden;
+  padding: 20px;
+  box-shadow: 0 -9px 20px 0px rgba(0, 0, 0, 0.231372549);
+}
+.message-form textarea {
+  width: calc(100% - 58px);
+  overflow-y: auto;
+  padding: 8px 50px 8px 8px;
+  min-height: 40px;
+  max-height: 150px;
+  font-family: Roboto, serif;
+  font-size: 16px;
+}
+.message-form button {
+  border: none;
+  width: 40px;
+  position: absolute;
+  right: 30px;
+  bottom: 25px;
+  background: none;
+  color: #5AB9EA;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=main.css.map */
